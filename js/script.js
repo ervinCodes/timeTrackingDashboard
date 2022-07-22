@@ -15,13 +15,14 @@ window.onload = function () {
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data);
+      // Loads current weekly data on screen load
       for (let i = 0; i < data.length; i++) {
         current[i].textContent = `${data[i].timeframes.weekly.current}hrs`;
         previous[
           i
         ].textContent = `Last Week - ${data[i].timeframes.weekly.previous}hrs`;
       }
-
+      // Loads daily information when daily button is clicked
       dailyBtn.addEventListener('click', function () {
         for (let i = 0; i < data.length; i++) {
           current[i].textContent = `${data[i].timeframes.daily.current}hrs`;
@@ -30,7 +31,7 @@ window.onload = function () {
           ].textContent = `Last Week - ${data[i].timeframes.daily.previous}hrs`;
         }
       });
-
+      // Loads weekly information when daily button is clicked
       weeklyBtn.addEventListener('click', function () {
         for (let i = 0; i < data.length; i++) {
           current[i].textContent = `${data[i].timeframes.weekly.current}hrs`;
@@ -39,7 +40,7 @@ window.onload = function () {
           ].textContent = `Last Week - ${data[i].timeframes.weekly.previous}hrs`;
         }
       });
-
+      // Loads monthly information when daily button is clicked
       monthlyBtn.addEventListener('click', function () {
         for (let i = 0; i < data.length; i++) {
           current[i].textContent = `${data[i].timeframes.monthly.current}hrs`;
@@ -48,7 +49,6 @@ window.onload = function () {
           ].textContent = `Last Week - ${data[i].timeframes.monthly.previous}hrs`;
         }
       });
-      //loading content once page loads
     })
     .catch(err => {
       console.log(`error ${err}`);

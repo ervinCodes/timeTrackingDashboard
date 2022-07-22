@@ -119,7 +119,7 @@ main {
   border-radius: 10px;
   z-index: 1;
   padding: 25px;
-  transition: 1s;
+  transition: 2s;
   /* border: 1px solid white; */
 }
 
@@ -144,8 +144,12 @@ main {
   /*******************************************/
 
 a {
-  color: #fff;
+  color: hsl(235, 45%, 61%);
   text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 p {
@@ -180,6 +184,10 @@ p {
 .card h1 {
   font-size: 45px;
   font-weight: 300;
+}
+
+.card-content:hover {
+  background: hsl(246, 80%, 60%);
 }
 
 .card-top-row p {
