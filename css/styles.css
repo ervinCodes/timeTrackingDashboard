@@ -270,14 +270,19 @@ p {
 }
 
 @media screen and (max-width: 680px) {
+  .user {
+    width: 90%;
+    max-width: 350px;
+  }
+
   .tasks {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
   }
 
   .card {
-    width: 100%;
-    max-width: 400px;
+    width: 95%;
+    max-width: 450px;
     height: 200px;
   }
 
