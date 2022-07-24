@@ -1,12 +1,12 @@
 'use strict';
 
-// Variables
+// Initiated variables for buttons and current & previous data
 let dailyBtn = document.querySelector('#daily');
 let weeklyBtn = document.querySelector('#weekly');
 let monthlyBtn = document.querySelector('#monthly');
-
 let current = document.querySelectorAll('.current');
 let previous = document.querySelectorAll('.previous');
+
 console.log(current);
 console.log(previous);
 
