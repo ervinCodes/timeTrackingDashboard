@@ -1,6 +1,6 @@
 # Frontend Mentor - Time Tracking Dashboard Solution
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -47,11 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-This project really enforced the structure of formatting my HTML and really giving thought to class names and ID's so that they are easily accessible when styling and running JavaScript.  This was also my first time dealing with JSON data locally.  I had a tough time figuring out where to start and how to access the data, but I referenced previous projects and played around with the console and was able to figure it out.  I really struggled getting the data to load on the DOM, however after really examining my HTML structure, I was able to identify which elements I needed to manipulate.  To access the current and previous information on load i first initiated the elements containing information with the class selector 'current' and 'previous' as so:
+This project really enforced the structure of formatting my HTML and really giving thought to class names and ID's so that they are easily accessible when styling and running JavaScript. This was also my first time dealing with JSON data locally. I had a tough time figuring out where to start and how to access the data, but I referenced previous projects and played around with the console and was able to figure it out. I really struggled getting the data to load on the DOM, however after really examining my HTML structure, I was able to identify which elements I needed to manipulate. To access the current and previous information on load i first initiated the elements containing information with the class selector 'current' and 'previous' as so:
 
 ```html
 <h1 class="current">32hrs</h1>
-  <p class="previous">Last Week - 36 hrs</p>
+<p class="previous">Last Week - 36 hrs</p>
 ```
 
 I then used querySelectorAll to select all the elements with the same class:
@@ -61,6 +61,7 @@ let current = document.querySelectorAll('.current');
 let previous = document.querySelectorAll('.previous');
 }
 ```
+
 Lastly, I ran a for loop to iterate through the elements and place data where it was needed:
 
 ```js
@@ -70,12 +71,36 @@ Lastly, I ran a for loop to iterate through the elements and place data where it
   }
 }
 ```
+
 ### Continued development
 
-When time allows, I would like to refactor my code.  I ran 4 for loops for the current, daily, weekly and montlhly data with very slight changes and I feel that could be optimized with less code. 
+When time allows, I would like to refactor my code. I ran 4 for loops for the current, daily, weekly and montlhly data with very slight changes and I feel that could be optimized with less code.
 
-## Author
+## Links to my other projects
 
-- Portfolio - [Ervin Natareno](https://www.dev-ervin.netlify.app)
-- Frontend Mentor - [@ervn12](https://www.frontendmentor.io/profile/ervn12)
-- Twitter - [@ervn_](https://www.twitter.com/ervn_)
+<table bordercolor="#66b2b2">
+  
+  <tr>
+    <td width="33.3%"  style="align:center;" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/myPortfolio">My Portfolio</a>
+        <br />
+      <a target="_blank" href="https://github.com/ervn12/myPortfolio">
+            <img src="https://media.giphy.com/media/bLQ6ITkWJPVQxrOrJ1/giphy.gif" width="100%"  alt="A Pig Game"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/The-Daily-Grind">The Daily Grind</a>
+        <br />
+        <a target="_blank" href="https://github.com/ervn12/The-Daily-Grind">
+          <img src="https://media.giphy.com/media/oHVwHtlRpTr43O4ik8/giphy.gif" width="100%" alt="Matching Card Game"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+        <a target="_blank" href="https://github.com/ervn12/star-trek-CLIENT">Star Trek - A Field Guide to Aliens</a>
+        <br />
+        <a target="_blank" href="https://github.com/ervn12/star-trek-CLIENT">
+          <img src="https://media.giphy.com/media/txG49WSDMlTnZ0QXYe/giphy.gif" width="100%" alt="Portfolio"/>
+        </a>
+    </td>
+  </tr>
+</table>
