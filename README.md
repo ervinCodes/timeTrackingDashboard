@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/active-states.jpg)
+![](https://media.giphy.com/media/cGPivDzfcz7K1LPDXz/giphy.gif)
 
 ### Links
 
